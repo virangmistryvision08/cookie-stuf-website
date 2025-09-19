@@ -1,0 +1,118 @@
+:root {
+  --yellow-color: #f99106;
+  --grayis-color: #e7e7e700;
+  --white-color: white;
+}
+#card {
+  /* width: 280px; */
+  height: 580px;
+  background-color: var(--white-color);
+  border: 2px solid rgb(219, 219, 219);
+  border-radius: 10px;
+  font-family: "Poppins", "sans-serif";
+  overflow: hidden;
+}
+#divImg {
+  overflow: hidden;
+  height: 55%;
+  width: 100%;
+  border-bottom: 2px solid rgb(202, 202, 202);
+}
+#card:hover #featuredIMG {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+#card:hover {
+  box-shadow: 2px 2px 5px rgb(206, 206, 206) !important;
+  transition: all 0.3s ease;
+}
+#featuredIMG {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#content {
+  height: 35%;
+  width: 100%;
+  padding: 20px 20px;
+  overflow: hidden;
+  /* background-color: aqua; */
+}
+#name {
+  height: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.lifeTimeAccess {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#course {
+  /* height: 10%; */
+  /* width: 50%; */
+  display: inline-block;
+  padding: 7px 15px;
+  color: white;
+  background-color: var(--yellow-color);
+  /* margin-top: auto; */
+  margin-left: 20px;
+  border-radius: 5px;
+}
+#course:hover {
+  cursor: pointer;
+  background-color: rgb(255, 166, 0);
+}
+#rating {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+#stars {
+  display: flex;
+  font-size: 1.5rem;
+}
+
+#price {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: "Poppins", "sans-serif";
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+#price #bigRuppesIcon {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "Poppins", "sans-serif";
+  color: black;
+}
+#smallRuppesIcon {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Poppins", "sans-serif";
+  color: rgb(167, 167, 167);
+  text-decoration: line-through;
+}
+
+@media (max-width: 768px) {
+  #name {
+    height: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  .lifeTimeAccess {
+    font-size: 1.3rem;
+  }
+}

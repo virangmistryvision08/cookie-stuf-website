@@ -1,0 +1,98 @@
+:root{
+    --orange-color:  #F99106;
+}
+
+#main{
+    background-color: #bebebe;
+    
+}
+
+#button{
+    background-color: var(--orange-color);
+    color: white;
+    border: none;
+    padding: 5px 13px;
+    height: 55px;
+    width: 130px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px gray;
+  }
+  #button i{
+    margin-left: 5px;
+    transition: all 0.2s ease-in-out;
+  }
+#button:hover i{
+    margin-left: 10px;
+}
+
+@media (max-width: 480px) {
+  #cardContainer {
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px 300px !important;
+    /* padding: 20px; */
+    margin: 50px 0px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  #cardContainer {
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px 80px !important;
+    /* padding: 20px; */
+    margin: 50px 0px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #cardContainer {
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px 100px !important;
+    /* padding: 20px; */
+    margin: 50px auto;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  #cardContainer {
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px 100px !important;
+    /* padding: 20px; */
+    margin: 50px 0px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 1441px) {
+  #cardContainer {
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 40px 100px !important;
+    /* padding: 20px; */
+    margin: 50px 0px;
+    box-sizing: border-box;
+  }
+}

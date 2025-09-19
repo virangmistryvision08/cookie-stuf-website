@@ -1,0 +1,141 @@
+.post {
+  height: 650px;
+}
+.postImg {
+  height: 50%;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  overflow: hidden;
+  transform: scaleX(-1);
+}
+img {
+  transition: all 0.3s ease-in-out;
+}
+.post:hover img {
+  transform: scale(1.1);
+}
+.postImg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover !important;
+}
+.content {
+  height: 50%;
+  font-family: "Poppins";
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.name {
+  font-weight: 500;
+  font-size: 1.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 40px;
+}
+.date {
+  color: #00000080;
+  font-size: 1.3rem;
+  margin-bottom: 15px !important;
+  margin: 5px 0px !important;
+}
+.text {
+  height: auto;
+  font-size: 1rem;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* Show up to 3 lines */
+  -webkit-box-orient: vertical;
+}
+.button {
+  font-family: "Yeseva One";
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 7px;
+  color: #f99106;
+  margin-top: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.button i {
+  font-size: 12px;
+}
+.button:hover i {
+  margin-left: 5px !important;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 480px) {
+  .post {
+    height: 570px;
+  }
+  .name {
+    font-size: 1.42rem;
+  }
+  .date {
+    font-size: 1rem;
+  }
+  .content {
+    font-size: 1rem;
+  }
+  .button {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .post {
+    height: 500px;
+  }
+  .name {
+    font-size: 1.4rem;
+  }
+  .date {
+    font-size: 1.1rem;
+  }
+  .content {
+    font-size: 1rem;
+  }
+  .button {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .post {
+    height: 500px;
+  }
+  .name {
+    font-size: 1.7rem;
+  }
+  .date {
+    font-size: 1.1rem;
+  }
+  .content {
+    font-size: 1rem;
+  }
+  .button {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .post {
+    height: 620px;
+  }
+  .name {
+    font-size: 1.7rem;
+  }
+  .date {
+    font-size: 1.2rem;
+  }
+  .content {
+    font-size: 1rem;
+  }
+  .button {
+    font-size: 1.2rem;
+  }
+}

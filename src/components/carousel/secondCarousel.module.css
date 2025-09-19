@@ -1,0 +1,184 @@
+.content {
+    color: white !important;
+    font-size: 2.8rem;
+    line-height: 60px;
+    /* font-family: "Yeseva One", serif; */
+    /* background-color: green; */
+}
+
+.secondDate {
+    display: inline-block !important;
+    width: fit-content;
+    font-size: 1.3rem;
+    padding: 15px 25px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: -20px !important;
+}
+
+.price {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 25px;
+    color: white;
+    margin-top: 10px !important;
+}
+
+.bigPrice {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 7px;
+    font-size: 1.9rem;
+    position: relative;
+    text-decoration: line-through;
+    
+}
+
+.smallPrice {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 7px;
+    font-size: 1.4rem;
+}
+
+.recipes {
+    color: white;
+    font-size: 1.9rem;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+@media (max-width:768px) {
+    .content {
+        font-size: 1.9rem;
+        line-height: 40px;
+    }
+
+    .secondDate {
+        font-size: 1.2rem;
+        padding: 5px 10px;
+        margin-top: 0px !important;
+    }
+
+    .price {
+        gap: 15px;
+        margin-top: 10px !important;
+    }
+
+    .bigPrice {
+        gap: 7px;
+        font-size: 1.2rem;
+    }
+
+    .smallPrice {
+        gap: 7px;
+        font-size: 1.1rem;
+    }
+    .recipes {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    .content {
+        font-size: 2.5rem;
+        line-height: 60px;
+    }
+
+    .secondDate {
+        font-size: 1.3rem;
+        padding: 15px 20px;
+        margin-top: 0px !important;
+    }
+
+    .price {
+        gap: 25px;
+        margin-top: 10px !important;
+    }
+
+    .bigPrice {
+        gap: 7px;
+        font-size: 1.5rem;
+    }
+
+    .smallPrice {
+        gap: 7px;
+        font-size: 1.2rem;
+    }
+    .recipes {
+        font-size: 1.7rem;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .content {
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+
+    .secondDate {
+        font-size: 1.3rem;
+        padding: 15px 25px;
+        margin-top: 0px !important;
+    }
+
+    .price {
+        gap: 25px;
+        margin-top: 10px !important;
+    }
+
+    .bigPrice {
+        gap: 7px;
+        font-size: 1.7rem;
+    }
+
+    .smallPrice {
+        gap: 7px;
+        font-size: 1.5rem;
+    }
+    .recipes {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        margin-bottom: -15px;
+    }
+}
+
+@media (min-width:1025px) {
+    .content {
+        font-size: 3.1rem;
+        line-height: 60px;
+    }
+
+    .secondDate {
+        font-size: 1.5rem;
+        padding: 20px 35px;
+        margin-top: 0px !important;
+    }
+
+    .price {
+        gap: 25px;
+        margin-top: 10px !important;
+    }
+
+    .bigPrice {
+        gap: 7px;
+        font-size: 2rem;
+    }
+
+    .smallPrice {
+        gap: 7px;
+        font-size: 1.6rem;
+    }
+    .recipes {
+        font-size: 1.9rem;
+        margin-top: 10px;
+        margin-bottom: -15px;
+    }
+}

@@ -1,0 +1,132 @@
+:root {
+  --yellow-color: #f99106;
+  --grayis-color: #00000080;
+  --white-color: white;
+}
+
+/* 
+#wrapper {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  } */
+#title {
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 0px;
+  font-family: "Yeseva One";
+  font-weight: 400;
+}
+
+/* #content {
+    color: var(--grayis-color);
+    font-size: 20px;
+    margin-top: 15px;
+    font-family: "Poppins", "sans-serif";
+  } */
+
+@media (max-width: 480px) {
+  #wrapper {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #title {
+    text-align: center;
+    font-size: 1.8rem;
+    letter-spacing: 0px;
+  }
+
+  #content {
+    color: var(--grayis-color);
+    font-size: 20px;
+    margin-top: 15px;
+    font-family: "Poppins", "sans-serif";
+  }
+}
+
+@media (min-width: 481px) and (max-width:768px) {
+  #wrapper {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #title {
+    text-align: center;
+    font-size: 2.7rem;
+    letter-spacing: 0px;
+  }
+
+  #content {
+    color: var(--grayis-color);
+    font-size: 20px;
+    margin-top: 15px;
+    font-family: "Poppins", "sans-serif";
+  }
+}
+
+@media (min-width: 769px) and (max-width:1024px) {
+  #wrapper {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #title {
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0px;
+  }
+
+  #content {
+    color: var(--grayis-color);
+    font-size: 23px;
+    margin-top: 15px;
+    font-family: "Poppins", "sans-serif";
+  }
+}
+
+@media (min-width: 1025px) and (max-width:1440px) {
+  #wrapper {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #title {
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0px;
+  }
+
+  #content {
+    color: var(--grayis-color);
+    font-size: 25px;
+    margin-top: 15px;
+    font-family: "Poppins", "sans-serif";
+  }
+}
+
+@media (min-width: 1441px) {
+  #wrapper {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 0px;
+  }
+
+  #content {
+    color: var(--grayis-color);
+    font-size: 25px;
+    margin-top: 15px;
+    font-family: "Poppins", "sans-serif";
+  }
+}

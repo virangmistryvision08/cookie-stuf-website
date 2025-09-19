@@ -1,0 +1,17 @@
+#main{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../../../images/healthyTastyRecipes/6177f56fd8f7a451d6cd6119c6088e8449b39b1f.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scaleX(-1);
+}
+#container_fluid{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.874);
+    padding: 50px 0px;
+    padding-top: 75px;
+    transform: scaleX(-1);
+}

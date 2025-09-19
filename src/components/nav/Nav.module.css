@@ -1,0 +1,370 @@
+:root {
+  --orange-color: #F99106;
+  --grayis-color: #00000080;
+}
+
+#wrapper {
+  width: 100%;
+  box-shadow: 0px 1px 5px gray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: white;
+  /* background-color: yellow; */
+}
+
+nav {
+  width: 80%;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 9.9%;
+  display: inline-block;
+  line-height: 0%;
+  cursor: pointer;
+}
+
+.logoImg {
+  height: 40px;
+  width: 90px;
+  object-fit: contain;
+}
+
+.logoText {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  gap: 4px;
+  font-size: 15px;
+  font-family: "Poppins";
+  font-weight: 500;
+  line-height: 70%;
+}
+
+.logoText p {
+  color: var(--orange-color);
+}
+
+/* .tabs {
+  width: 40%;
+  background-color: #927753;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  font-family: "Yeseva One";
+  font-size: 16px;
+  color: var(--grayis-color);
+} */
+
+
+
+
+
+
+.tabs {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  font-family: "Yeseva One";
+  font-size: 16px;
+  color: var(--grayis-color);
+  transition: all 0.3s ease;
+}
+
+
+
+.list:hover {
+  color: var(--orange-color) !important;
+  cursor: pointer;
+}
+
+a {
+  color: var(--grayis-color);
+  text-decoration: none;
+}
+
+:global(.active) {
+  background-color: white !important;
+  color: var(--orange-color) !important;
+}
+
+
+.navButtons {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Yeseva One";
+  color: var(--grayis-color);
+}
+
+.navButtons :nth-child(1) {
+  font-size: 1.1rem;
+}
+
+.navButtons :nth-child(3) {
+  background-color: var(--orange-color);
+  color: white;
+  padding: 18px 55px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 2px solid var(--orange-color);
+}
+
+.navButtons :nth-child(3):hover {
+  background-color: white;
+  color: var(--orange-color);
+  border: 2px solid var(--orange-color);
+}
+
+.hamburgerIcon {
+  height: 10px;
+  width: 10px;
+  display: none;
+}
+
+@media (max-width:480px) {
+  nav {
+    height: 60px;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+
+
+
+
+
+
+  .tabs {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 15px 0;
+    background: white;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    /* box-shadow: 0px 2px 8px rgba(0,0,0,0.1); */
+    text-align: center;
+  }
+
+  .navButtons {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 15px 0;
+    background-color: white;
+    position: absolute;
+    top: 193px;
+    left: 0;
+    /* box-shadow: 0px 2px 8px rgba(0,0,0,0.1); */
+    text-align: center;
+  }
+
+  .tabs.show,
+  .navButtons.show {
+    display: flex;
+  }
+
+
+
+
+
+
+
+  .logoImg {
+    height: 25px;
+  }
+
+  .logoText {
+    gap: 2px;
+    font-size: 10px;
+    line-height: 120%;
+    /* background-color: chocolate; */
+  }
+
+  .hamburgerIcon {
+    display: block;
+  }
+
+  /* .tabs {
+    display: none;
+  } */
+}
+
+@media (min-width:481px) and (max-width:768px) {
+  .logo {
+    width: 15%;
+  }
+
+  .logoText {
+    font-size: 12px;
+  }
+
+
+
+
+
+  .tabs {
+    display: none;
+    /* hidden by default */
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 15px 0;
+    background: white;
+    position: absolute;
+    top: 75px;
+    /* below nav */
+    left: 0;
+    /* box-shadow: 0px 2px 8px rgba(35, 32, 32, 0.71); */
+    text-align: center;
+  }
+
+  /* When open */
+  .tabs.show {
+    display: flex;
+    /* show only when toggled */
+  }
+
+
+
+
+
+
+
+  .navButtons {
+    width: 50%;
+  }
+
+  .navButtons :nth-child(3) {
+    background-color: var(--orange-color);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+  }
+
+  .hamburgerIcon {
+    display: block;
+  }
+
+  /* .tabs {
+    display: none;
+  } */
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+
+  nav {
+    display: flex;
+  }
+
+  .tabs {
+    width: 50%;
+    justify-content: space-evenly;
+    /* center them */
+    /* margin-top: 10px; */
+  }
+
+
+  .logo {
+    width: 15%;
+  }
+
+  /* .tabs {
+    width: 50%;
+    display: flex;
+  } */
+
+  .navButtons {
+    width: 28%;
+  }
+
+  .navButtons :nth-child(3) {
+    background-color: var(--orange-color);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 30px;
+  }
+
+}
+
+@media (min-width:1025px) and (max-width: 1440px) {
+  .logo {
+    width: 10%;
+  }
+
+  .tabs {
+    width: 50%;
+    display: flex;
+  }
+
+  .navButtons {
+    width: 25%;
+    /* background-color: aqua; */
+  }
+
+  .navButtons :nth-child(3) {
+    background-color: var(--orange-color);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .logo {
+    width: 10%;
+    line-height: 25px !important;
+  }
+
+  .logoImg {
+    height: 50px;
+    width: 150px;
+    object-fit: contain;
+  }
+
+  .logoText {
+    font-size: 1.0rem;
+  }
+
+  nav {
+    height: 100px;
+  }
+
+  .tabs {
+    width: 35%;
+    font-size: 1.1rem;
+    display: flex;
+  }
+
+  .navButtons {
+    width: 20%;
+    /* background-color: aqua; */
+  }
+
+  .navButtons :nth-child(1),
+  .navButtons :nth-child(2) {
+    font-size: 1.1rem;
+  }
+
+  .navButtons :nth-child(3) {
+    background-color: var(--orange-color);
+    font-size: 1.1rem;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+  }
+
+}

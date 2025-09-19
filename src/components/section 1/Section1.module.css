@@ -1,0 +1,795 @@
+:root {
+  --yellow-color: #f99106;
+  --grayis-color: #00000080;
+  --white-color: white;
+  --green-yellow-color: #d7f315;
+}
+
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden; /* removes horizontal scrollbar */
+    overflow-y: auto;   /* keeps vertical scroll */
+  }
+  #container_fluid {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.736), rgba(0, 0, 0, 0.314), rgba(255, 255, 255, 0));
+    width: 100vw;
+    height: 100vh;
+    padding-top: 130px;
+    overflow: hidden;
+  }
+
+  #main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    /* background-image: url(../../../images/24d1cd2409044a4c8eac7e9a3049c0720a09fd2b.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+    top: 40px;
+  }
+
+  #container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #leftPart {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    font-family: "Yeseva One";
+  }
+
+  #img {
+    width: 65px;
+    height: 50px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #img img {
+    width: 150% !important;
+    height: 150%;
+    /* background-color: rgba(0, 255, 255, 0.699); */
+    object-fit: cover;
+    padding: 0;
+    font-size: 30px;
+    /* background-color: var(--white-color); */
+  }
+
+  #leftPart #content {
+    font-size: 2rem;
+    color: var(--white-color);
+    /* background-color: rgba(0, 0, 0, 0.29); */
+    padding: 20px 20px 20px 0px;
+    font-family: "Yeseva One", serif;
+    line-height: 40px;
+  }
+
+  #leftPart #content p,
+  span {
+    color: #FFBF00;
+  }
+
+  #leftPart #date {
+    width: 100%;
+    /* height:1rem; */
+    font-weight: 400;
+    /* font-style: normal; */
+    font-size: 30px;
+    color: var(--green-yellow-color);
+  }
+
+  #leftPart #videoPdf {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    /* font-size: 35px; */
+  }
+
+  #leftPart #videoPdf :nth-child(1) {
+    width: 45%;
+    /* height: 54px; */
+    font-size: 0.9rem;
+    color: var(--white-color);
+    /* padding: 9px; */
+  }
+
+  #leftPart #videoPdf :nth-child(2) {
+    width: 28%;
+    font-size: 1.2rem;
+    background-color: var(--yellow-color);
+    color: var(--white-color);
+    padding: 9px;
+  }
+
+  #leftPart #videoPdf :nth-child(3) {
+    width: 22%;
+    font-size: 1.2rem;
+    background-color: var(--green-yellow-color);
+    color: var(--white-color);
+    padding: 9px;
+    color: black;
+  }
+
+
+  /* Style dots wrapper */
+  :global(.slick-dots) {
+    bottom: 30px !important;
+    /* move position */
+  }
+
+  /* Default dot button */
+  :global(.slick-dots li button:before) {
+    font-size: 20px !important;
+    /* change size */
+    color: rgb(219, 219, 219) !important;
+    /* inactive color */
+    opacity: 1;
+    /* always show */
+  }
+
+  /* Active dot */
+  :global(.slick-dots li.slick-active button:before) {
+    color: var(--yellow-color) !important;
+    /* your custom active color */
+    background-color: var(--yellow-color);
+  }
+
+  :global(.slick-dots li .custom-dot) {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #ffffff;
+    /* inactive */
+  }
+
+  :global(.slick-dots li.slick-active .custom-dot) {
+    background: var(--yellow-color);
+    /* active */
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+  #container_fluid {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.736), rgba(0, 0, 0, 0.314), rgba(0, 0, 0, 0));
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+  }
+
+  #main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-image: url(../../../images/24d1cd2409044a4c8eac7e9a3049c0720a09fd2b.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+    top: 40px;
+  }
+
+  #container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #leftPart {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    font-family: "Yeseva One";
+  }
+
+  #img {
+    width: 65px;
+    height: 50px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #img img {
+    width: 150% !important;
+    height: 150%;
+    /* background-color: rgba(0, 255, 255, 0.699); */
+    object-fit: cover;
+    padding: 0;
+    font-size: 30px;
+    /* background-color: var(--white-color); */
+  }
+
+  #leftPart #content {
+    font-size: 2.7rem;
+    color: var(--white-color);
+    /* background-color: rgba(0, 0, 0, 0.29); */
+    padding: 20px 20px 20px 0px;
+    font-family: "Yeseva One", serif;
+    line-height: 55px;
+  }
+
+  #leftPart #content p,
+  span {
+    color: #FFBF00;
+  }
+
+  #leftPart #date {
+    width: 100%;
+    /* height:1rem; */
+    font-weight: 400;
+    /* font-style: normal; */
+    font-size: 30px;
+    color: var(--green-yellow-color);
+  }
+
+  #leftPart #videoPdf {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    /* font-size: 35px; */
+  }
+
+  #leftPart #videoPdf :nth-child(1) {
+    width: 45%;
+    /* height: 54px; */
+    font-size: 0.9rem;
+    color: var(--white-color);
+    /* padding: 9px; */
+  }
+
+  #leftPart #videoPdf :nth-child(2) {
+    width: 28%;
+    font-size: 1.2rem;
+    background-color: var(--yellow-color);
+    color: var(--white-color);
+    padding: 9px;
+  }
+
+  #leftPart #videoPdf :nth-child(3) {
+    width: 22%;
+    font-size: 1.2rem;
+    background-color: var(--green-yellow-color);
+    color: var(--white-color);
+    padding: 9px;
+    color: black;
+  }
+
+
+  /* Style dots wrapper */
+  :global(.slick-dots) {
+    bottom: 30px !important;
+    /* move position */
+  }
+
+  /* Default dot button */
+  :global(.slick-dots li button:before) {
+    font-size: 20px !important;
+    /* change size */
+    color: rgb(219, 219, 219) !important;
+    /* inactive color */
+    opacity: 1;
+    /* always show */
+  }
+
+  /* Active dot */
+  :global(.slick-dots li.slick-active button:before) {
+    color: var(--yellow-color) !important;
+    /* your custom active color */
+    background-color: var(--yellow-color);
+  }
+
+  :global(.slick-dots li .custom-dot) {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ffffff;
+    /* inactive */
+  }
+
+  :global(.slick-dots li.slick-active .custom-dot) {
+    background: var(--yellow-color);
+    /* active */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #container_fluid {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.736), rgba(0, 0, 0, 0.314), rgba(255, 255, 255, 0));
+    width: 100%;
+    height: 100vh;
+    padding-top: 120px;
+    overflow: hidden;
+  }
+
+  #main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    /* background-image: url(../../../images/24d1cd2409044a4c8eac7e9a3049c0720a09fd2b.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+    top: 40px;
+  }
+
+  #container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #leftPart {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    font-family: "Yeseva One";
+  }
+
+  #img {
+    width: 65px;
+    height: 50px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #img img {
+    width: 150% !important;
+    height: 150%;
+    /* background-color: rgba(0, 255, 255, 0.699); */
+    object-fit: cover;
+    padding: 0;
+    font-size: 30px;
+    /* background-color: var(--white-color); */
+  }
+
+  #leftPart #content {
+    font-size: 2.7rem;
+    color: var(--white-color);
+    /* background-color: rgba(0, 0, 0, 0.29); */
+    padding: 20px 20px 20px 0px;
+    font-family: "Yeseva One", serif;
+    line-height: 60px;
+  }
+
+  #leftPart #content p,
+  span {
+    color: #FFBF00;
+  }
+
+  #leftPart #date {
+    width: 100%;
+    /* height:1rem; */
+    font-weight: 400;
+    /* font-style: normal; */
+    font-size: 30px;
+    color: var(--green-yellow-color);
+  }
+
+  #leftPart #videoPdf {
+    width: 38%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    /* font-size: 35px; */
+  }
+
+  #leftPart #videoPdf :nth-child(1) {
+    width: 50%;
+    /* height: 54px; */
+    font-size: 1rem;
+    color: var(--white-color);
+    padding: 9px;
+  }
+
+  #leftPart #videoPdf :nth-child(2) {
+    width: 25%;
+    font-size: 1.2rem;
+    background-color: var(--yellow-color);
+    color: var(--white-color);
+    padding: 9px;
+  }
+
+  #leftPart #videoPdf :nth-child(3) {
+    width: 17%;
+    font-size: 1.2rem;
+    background-color: var(--green-yellow-color);
+    color: var(--white-color);
+    padding: 9px;
+    color: black;
+  }
+
+
+  /* Style dots wrapper */
+  :global(.slick-dots) {
+    bottom: 30px !important;
+    /* move position */
+  }
+
+  /* Default dot button */
+  :global(.slick-dots li button:before) {
+    font-size: 20px !important;
+    /* change size */
+    color: rgb(219, 219, 219) !important;
+    /* inactive color */
+    opacity: 1;
+    /* always show */
+  }
+
+  /* Active dot */
+  :global(.slick-dots li.slick-active button:before) {
+    color: var(--yellow-color) !important;
+    /* your custom active color */
+    background-color: var(--yellow-color);
+  }
+
+  :global(.slick-dots li .custom-dot) {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #ffffff;
+    /* inactive */
+  }
+
+  :global(.slick-dots li.slick-active .custom-dot) {
+    background: var(--yellow-color);
+    /* active */
+  }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  #container_fluid {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.736), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    /* width: 100%; */
+    height: 100vh;
+    padding-top: 100px;
+    overflow: hidden;
+  }
+
+  #main {
+    /* width: 100%; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-image: url(../../../images/24d1cd2409044a4c8eac7e9a3049c0720a09fd2b.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+    top: 40px;
+  }
+
+  #container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #leftPart {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    font-family: "Yeseva One";
+    line-height: 20px;
+  }
+
+  #img {
+    width: 65px;
+    height: 50px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #img img {
+    width: 150% !important;
+    height: 150%;
+    /* background-color: rgba(0, 255, 255, 0.699); */
+    object-fit: cover;
+    padding: 0;
+    font-size: 30px;
+    /* background-color: var(--white-color); */
+  }
+
+  #leftPart #content {
+    font-size: 3.5rem;
+    color: var(--white-color);
+    /* background-color: rgba(0, 0, 0, 0.29); */
+    padding: 20px 20px 20px 0px;
+    font-family: "Yeseva One", serif;
+    line-height: 90px;
+  }
+
+  #leftPart #content p,
+  span {
+    color: #FFBF00;
+  }
+
+  #leftPart #date {
+    width: 100%;
+    /* height:1rem; */
+    font-weight: 400;
+    /* font-style: normal; */
+    font-size: 35px;
+    color: var(--green-yellow-color);
+  }
+  
+  #leftPart #videoPdf {
+    width: 38%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    /* font-size: 35px; */
+  }
+
+  #leftPart #videoPdf :nth-child(1) {
+    width: 50%;
+    /* height: 54px; */
+    font-size: 1.3rem;
+    color: var(--white-color);
+    padding: 9px;
+  }
+
+  #leftPart #videoPdf :nth-child(2) {
+    width: 25%;
+    font-size: 1.2rem;
+    background-color: var(--yellow-color);
+    color: var(--white-color);
+    padding: 9px;
+  }
+
+  #leftPart #videoPdf :nth-child(3) {
+    width: 17%;
+    font-size: 1.2rem;
+    background-color: var(--green-yellow-color);
+    color: var(--white-color);
+    padding: 9px;
+    color: black;
+  }
+
+
+  /* Style dots wrapper */
+  :global(.slick-dots) {
+    bottom: 40px !important;
+    /* move position */
+  }
+
+  /* Default dot button */
+  :global(.slick-dots li button:before) {
+    font-size: 20px !important;
+    /* change size */
+    color: rgb(219, 219, 219) !important;
+    /* inactive color */
+    opacity: 1;
+    /* always show */
+  }
+
+  /* Active dot */
+  :global(.slick-dots li.slick-active button:before) {
+    color: var(--yellow-color) !important;
+    /* your custom active color */
+    background-color: var(--yellow-color);
+  }
+
+  :global(.slick-dots li .custom-dot) {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #ffffff;
+    /* inactive */
+  }
+
+  :global(.slick-dots li.slick-active .custom-dot) {
+    background: var(--yellow-color);
+    /* active */
+  }
+
+}
+
+@media (min-width: 1441px) {
+  #container_fluid {
+    background: linear-gradient(to right, rgba(172, 172, 172, 0.736), rgba(205, 205, 205, 0.607), rgba(255, 255, 255, 0));
+    /* width: 100%; */
+    height: 100vh;
+    padding-top: 170px;
+    overflow: hidden;
+  }
+
+  #main {
+    /* width: 100%; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-image: url(../../../images/24d1cd2409044a4c8eac7e9a3049c0720a09fd2b.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+    top: 40px;
+  }
+
+  #container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #leftPart {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
+    font-family: "Yeseva One";
+    line-height: 20px;
+  }
+
+  #img {
+    width: 65px !important;
+    height: 50px !important;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #img img {
+    width: 150% !important;
+    height: 150%;
+    /* background-color: rgba(0, 255, 255, 0.699); */
+    object-fit: cover;
+    padding: 0;
+    font-size: 30px;
+    /* background-color: var(--white-color); */
+  }
+
+  #leftPart #content {
+    font-size: 3.5rem;
+    color: var(--white-color);
+    /* background-color: rgba(0, 0, 0, 0.29); */
+    padding: 20px 20px 20px 0px;
+    font-family: "Yeseva One", serif;
+    line-height: 90px;
+  }
+
+  #leftPart #content p,
+  span {
+    color: #FFBF00;
+  }
+
+  #leftPart #date {
+    width: 100%;
+    /* height:1rem; */
+    font-weight: 400;
+    /* font-style: normal; */
+    font-size: 35px;
+    color: var(--green-yellow-color);
+  }
+  
+  #leftPart #videoPdf {
+    width: 38%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    /* font-size: 35px; */
+  }
+
+  #leftPart #videoPdf :nth-child(1) {
+    width: 50%;
+    /* height: 54px; */
+    font-size: 1.3rem;
+    color: var(--white-color);
+    padding: 9px;
+  }
+
+  #leftPart #videoPdf :nth-child(2) {
+    width: 25%;
+    font-size: 1.2rem;
+    background-color: var(--yellow-color);
+    color: var(--white-color);
+    padding: 9px;
+  }
+
+  #leftPart #videoPdf :nth-child(3) {
+    width: 17%;
+    font-size: 1.2rem;
+    background-color: var(--green-yellow-color);
+    color: var(--white-color);
+    padding: 9px;
+    color: black;
+  }
+
+
+  /* Style dots wrapper */
+  :global(.slick-dots) {
+    bottom: 60px !important;
+    /* move position */
+  }
+
+  /* Default dot button */
+  :global(.slick-dots li button:before) {
+    font-size: 20px !important;
+    /* change size */
+    color: rgb(219, 219, 219) !important;
+    /* inactive color */
+    opacity: 1;
+    /* always show */
+  }
+
+  /* Active dot */
+  :global(.slick-dots li.slick-active button:before) {
+    color: var(--yellow-color) !important;
+    /* your custom active color */
+    background-color: var(--yellow-color);
+  }
+
+  :global(.slick-dots li .custom-dot) {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #ffffff;
+    /* inactive */
+  }
+
+  :global(.slick-dots li.slick-active .custom-dot) {
+    background: var(--yellow-color);
+    /* active */
+  }
+
+}

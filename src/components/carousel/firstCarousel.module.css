@@ -1,0 +1,511 @@
+:root {
+  --yellow-color: #f99106;
+  --grayis-color: #00000080;
+  --white-color: white;
+  --green-yellow-color: #d7f315;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  /* background-image: url(../../../images/24d1cd2409044a4c8eac7e9a3049c0720a09fd2b.jpg); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+  font-family: "Yeseva One";
+  top: 40px;
+  bottom: 40px;
+}
+
+#container_fluid {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.736),
+    rgba(0, 0, 0, 0.158),
+    rgba(255, 255, 255, 0)
+  );
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#container {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#leftPart {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Yeseva One";
+    line-height: 20px;
+}
+
+#leftPart #content {
+  color: var(--white-color);
+  font-family: "Yeseva One", serif;
+}
+
+#leftPart #content p,
+span {
+  color: #ffbf00;
+}
+
+#leftPart #date {
+  color: var(--green-yellow-color);
+}
+
+#leftPart #videoPdf {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+}
+
+#leftPart #videoPdf :nth-child(1) {
+  background-color: black;
+  color: var(--white-color);
+}
+
+#leftPart #videoPdf :nth-child(2) {
+  background-color: var(--yellow-color);
+  color: var(--white-color);
+}
+
+#leftPart #videoPdf :nth-child(3) {
+  background-color: var(--green-yellow-color);
+  color: var(--white-color);
+  color: black;
+}
+
+/* Default dot button */
+:global(.slick-dots li button:before) {
+  font-size: 20px !important;
+  /* change size */
+  color: rgb(219, 219, 219) !important;
+  /* inactive color */
+  opacity: 1;
+  /* always show */
+}
+
+/* Active dot */
+:global(.slick-dots li.slick-active button:before) {
+  color: var(--yellow-color) !important;
+  /* your custom active color */
+  background-color: var(--yellow-color);
+}
+
+:global(.slick-dots li .custom-dot) {
+  border-radius: 50%;
+  background: #ffffff;
+  /* inactive */
+}
+
+:global(.slick-dots li.slick-active .custom-dot) {
+  background: var(--yellow-color);
+  /* active */
+}
+
+@media (max-width: 480px) {
+  #container_fluid {
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.736),
+      rgba(41, 41, 41, 0.432),
+      rgba(255, 255, 255, 0)
+    );
+  }
+
+  #leftPart {
+    gap: 10px;
+  }
+
+  #img {
+    width: 69px;
+    height: 40px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #img img {
+    width: 100px;
+    height: 90px;
+    object-fit: cover;
+    padding: 0;
+    font-size: 30px;
+  }
+
+  #leftPart #content {
+    font-size: 2.2rem;
+    padding: 20px 20px 20px 0px;
+    line-height: 50px;
+  }
+
+  #leftPart #date {
+    width: 100%;
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  #leftPart #videoPdf {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #leftPart #videoPdf :nth-child(1) {
+    font-size: 0.8rem;
+    padding: 9px 13px;
+  }
+
+  #leftPart #videoPdf :nth-child(2) {
+    font-size: 0.8rem;
+    padding: 9px;
+  }
+
+  #leftPart #videoPdf :nth-child(3) {
+    font-size: 0.8rem;
+    padding: 9px;
+  }
+
+  /* Style dots wrapper */
+  :global(.slick-dots) {
+    bottom: 30px !important;
+    /* move position */
+  }
+
+  :global(.slick-dots li .custom-dot) {
+    width: 13px;
+    height: 13px;
+    /* inactive */
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  #container_fluid {
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.736),
+      rgba(0, 0, 0, 0.315),
+      rgba(255, 255, 255, 0)
+    );
+  }
+
+  #leftPart {
+    gap: 10px;
+  }
+
+  #img {
+    width: 70px;
+    height: 40px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #img img {
+    width: 100px;
+    height: 100px;
+    /* background-color: rgba(0, 255, 255, 0.699); */
+    object-fit: cover;
+    padding: 0;
+    font-size: 30px;
+    /* background-color: var(--white-color); */
+  }
+
+  #leftPart #content {
+    font-size: 2.8rem;
+    padding: 20px 20px 20px 0px;
+    line-height: 65px;
+  }
+
+  #leftPart #date {
+    width: 100%;
+    font-weight: 400;
+    font-size: 28px;
+  }
+
+  #leftPart #videoPdf {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #leftPart #videoPdf :nth-child(1) {
+    font-size: 1rem;
+    padding: 9px 13px;
+  }
+
+  #leftPart #videoPdf :nth-child(2) {
+    font-size: 1rem;
+    padding: 9px 13px;
+  }
+
+  #leftPart #videoPdf :nth-child(3) {
+    font-size: 1rem;
+    padding: 9px;
+  }
+
+  /* Style dots wrapper */
+  :global(.slick-dots) {
+    bottom: 30px !important;
+    /* move position */
+  }
+
+  :global(.slick-dots li .custom-dot) {
+    width: 15px;
+    height: 15px;
+    /* inactive */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  #container_fluid {
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.736),
+      rgba(0, 0, 0, 0.158),
+      rgba(255, 255, 255, 0)
+    );
+  }
+
+  #leftPart {
+    gap: 15px;
+  }
+
+  #img {
+    width: 75px;
+    height: 42px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #img img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    padding: 0;
+    font-size: 30px;
+  }
+
+  #leftPart #content {
+    font-size: 3.2rem;
+    padding: 20px 20px 20px 0px;
+    line-height: 75px;
+  }
+
+  #leftPart #date {
+    width: 100%;
+    font-weight: 400;
+    font-size: 30px;
+  }
+
+  #leftPart #videoPdf {
+    width: 50%;
+    margin-top: 20px;
+  }
+
+  #leftPart #videoPdf :nth-child(1) {
+    font-size: 1.1rem;
+    padding: 9px 13px;
+  }
+
+  #leftPart #videoPdf :nth-child(2) {
+    font-size: 1rem;
+    padding: 9px 13px;
+  }
+
+  #leftPart #videoPdf :nth-child(3) {
+    font-size: 1rem;
+    padding: 9px;
+  }
+
+  /* Style dots wrapper */
+  :global(.slick-dots) {
+    bottom: 30px !important;
+    /* move position */
+  }
+
+  :global(.slick-dots li .custom-dot) {
+    width: 17px;
+    height: 17px;
+    /* inactive */
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+  #container_fluid {
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.736),
+      rgba(0, 0, 0, 0.158),
+      rgba(255, 255, 255, 0)
+    );
+  }
+
+  #leftPart {
+    gap: 30px;
+  }
+
+  #img {
+    width: 83px;
+    height: 50px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #img img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    padding: 0;
+    font-size: 30px;
+  }
+
+  #leftPart #content {
+    font-size: 3.6rem;
+    padding: 20px 20px 20px 0px;
+    line-height: 85px;
+  }
+
+  #leftPart #date {
+    width: 100%;
+    font-weight: 400;
+    font-size: 35px;
+  }
+
+  #leftPart #videoPdf {
+    width: 50%;
+    margin-top: 20px;
+  }
+
+  #leftPart #videoPdf :nth-child(1) {
+    font-size: 1.3rem;
+    padding: 11px 15px;
+  }
+
+  #leftPart #videoPdf :nth-child(2) {
+    font-size: 1.2rem;
+    padding: 11px 13px;
+  }
+
+  #leftPart #videoPdf :nth-child(3) {
+    font-size: 1.2rem;
+    padding: 11px;
+  }
+
+  /* Style dots wrapper */
+  :global(.slick-dots) {
+    bottom: 40px !important;
+    /* move position */
+  }
+
+  :global(.slick-dots li .custom-dot) {
+    width: 17px;
+    height: 17px;
+    /* inactive */
+  }
+}
+
+@media (min-width: 1441px) {
+
+  #container_fluid {
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.736),
+      rgba(0, 0, 0, 0.158),
+      rgba(255, 255, 255, 0)
+    );
+  }
+  
+  #leftPart {
+    gap: 30px;
+  }
+
+  #img {
+    width: 97px;
+    height: 50px;
+    background-color: var(--white-color);
+    padding: 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #img img {
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    object-fit: cover;
+    padding: 0;
+    font-size: 30px;
+  }
+
+  #leftPart #content {
+    font-size: 3.4rem;
+    padding: 20px 20px 20px 0px;
+    line-height: 80px;
+  }
+
+  #leftPart #date {
+    width: 100%;
+    font-weight: 400;
+    font-size: 33px;
+  }
+
+  #leftPart #videoPdf {
+    width: 38%;
+    margin-top: 20px;
+  }
+
+  #leftPart #videoPdf :nth-child(1) {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+
+  #leftPart #videoPdf :nth-child(2) {
+    font-size: 1.2rem;
+    padding: 15px 13px;
+  }
+
+  #leftPart #videoPdf :nth-child(3) {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+
+  /* Style dots wrapper */
+  :global(.slick-dots) {
+    bottom: 60px !important;
+    /* move position */
+  }
+
+  :global(.slick-dots li .custom-dot) {
+    width: 17px;
+    height: 17px;
+    /* inactive */
+  }
+}

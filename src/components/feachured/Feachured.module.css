@@ -1,0 +1,53 @@
+:root {
+  --yellow-color: #f99106;
+  --grayis-color: #00000080;
+  --white-color: white;
+}
+
+#main {
+  width: 100%;
+  min-height: 100vh;
+  /* background-color: aqua; */
+  background-image: url(../../../images/0902c670ebc436ec0b58d5a5d4f5d94363fc5ad1.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.5; */
+}
+#container_fluid {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.874);
+  padding: 70px 0px;
+  /* padding-top: 50px; */
+}
+#container {
+  width: 80%;
+  /* background-color: rgba(255, 0, 0, 0.541); */
+  margin: 0 auto;
+}
+#cardContainer {
+  width: 100%;
+  max-width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 30px 50px;
+  padding-top: 50px;
+  /* margin: 50px 0px; */
+  box-sizing: border-box;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  #cardContainer {
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px 50px;
+    padding-top: 50px;
+    /* margin: 50px 0px; */
+    box-sizing: border-box;
+  }
+}

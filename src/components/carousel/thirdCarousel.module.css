@@ -1,0 +1,120 @@
+#imgChange {
+  background-image: url(../../../images/40dd71dae683c4b54073f8945b98c2b7fb78dcca.jpg);
+
+  width: 100%;
+  height: 100vh;
+  /* background-image: url(../../../images/24d1cd2409044a4c8eac7e9a3049c0720a09fd2b.jpg); */
+  background-position: center !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+  font-family: "Yeseva One";
+  top: 40px;
+  bottom: 40px;
+  transform: scaleX(-1);
+}
+#container_fluid {
+  background: linear-gradient(
+    to left,
+    rgba(192, 192, 192, 0.736),
+    rgba(255, 255, 255, 0.14),
+    rgba(133, 133, 133, 0.116)
+  );
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.scaleXContent {
+  transform: scaleX(-1);
+}
+.content {
+  font-size: 3.2rem;
+  line-height: 70px;
+}
+.thirdDate {
+  display: inline-block;
+  width: fit-content;
+  padding: 30px 30px;
+  font-size: 2.6rem;
+  border-radius: 8px;
+  margin-top: 30px !important;
+  cursor: pointer;
+}
+
+.recipes {
+  color: white;
+  font-size: 2.2rem;
+  margin: 40px 0px !important;
+}
+
+@media (max-width: 480px) {
+  #container_fluid {
+    background: linear-gradient(
+      to bottom,
+      rgba(192, 192, 192, 0.436),
+      rgba(255, 255, 255, 0.356),
+      rgba(168, 168, 168, 0.138)
+    );
+  }
+  .content {
+    font-size: 2.3rem;
+    line-height: 50px;
+  }
+  .thirdDate {
+    padding: 20px 40px;
+    font-size: 1.3rem;
+    margin-top: 20px !important;
+  }
+
+  .recipes {
+    font-size: 1.7rem;
+    margin: 30px 0px !important;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    #container_fluid {
+    background: linear-gradient(
+      to bottom,
+      rgba(192, 192, 192, 0.436),
+      rgba(255, 255, 255, 0.39),
+      rgba(168, 168, 168, 0.138)
+    );
+  }
+  .content {
+    font-size: 2.7rem;
+    line-height: 50px;
+  }
+  .thirdDate {
+    padding: 20px 30px;
+    font-size: 1.7rem;
+    margin-top: 20px !important;
+  }
+
+  .recipes {
+    font-size: 1.8rem;
+    margin: 25px 0px !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .content {
+    font-size: 3rem;
+    line-height: 60px;
+  }
+  .thirdDate {
+    padding: 20px 40px;
+    font-size: 2.2rem;
+    margin-top: 20px !important;
+  }
+
+  .recipes {
+    font-size: 1.8rem;
+    margin: 30px 0px !important;
+  }
+}
