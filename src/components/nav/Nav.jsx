@@ -10,7 +10,6 @@ const Nav = () => {
     navigate('/');
     setShow(false);
   }
-  
 
   return (
     <>
